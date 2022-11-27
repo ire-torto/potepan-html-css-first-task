@@ -1,0 +1,1009 @@
+@media (min-width: 0px) and (max-width: 768px) {
+/* モバイル向けスタイル */
+  a {
+   text-decoration: none;
+  }
+  body{
+   float:none;
+   flex-wrap: wrap;
+   margin: 0 0 ;
+   background-image: none;
+   }
+  header {
+   position: fixed;
+  }
+  .Header {
+   margin: 0 0;
+   height: 51px;
+   position: fixed !important;
+  }
+  .Main{
+   margin: 0 0;
+  }
+  
+  .MenuContener{
+   width: 100%;
+   height: 65px;
+   margin:0 0;
+   position: fixed;
+   background-color: white;
+   justify-content: space-between;
+  }
+  .MenuLogo {
+   display: block;
+  }
+  .MenuLogoImage{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    margin: 10px 10px;
+  	 
+  }
+  .MenuRight{
+   position: fixed;
+  }
+  .MenuRightNomal {
+   display: none;
+  }
+  .MenuRightItem-buttun{
+   color: white;
+   padding: 15px;
+   background-color: #f79214;
+   border-radius: 30px;
+   font-size: 0.7rem;
+  }
+  .MenuRightItemList {
+   text-align: center;
+  }
+  .MenuRightItemListLink>span:first-child {
+   font-weight: bold
+  }
+  .MenuRightItemListLink>span:last-child {
+   color: #f79214;
+   font-size: 20px;
+  }
+  /*--------------------------------------------------------------------------*/
+  .MenuRightHamburger {
+   margin: 100px 0;
+   width: 100%;
+   display: block;
+  }
+  .MenuBtn {
+      position: fixed;
+      top: 10px;
+      right: 50px;
+      display: flex;
+      height: 40px;
+      width: 40px;
+      justify-content: center;
+      align-items: center;
+      z-index: 90;
+  }
+  .MenuBtn span,
+  .MenuBtn span:before,
+  .MenuBtn span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 40px;
+      border-radius: 3px;
+      background-color: black;
+      position: absolute;
+  }
+  .MenuBtn span:before {
+      bottom: 10px;
+  }
+  .MenuBtn span:after {
+      top: 10px;
+  }
+
+  input[type=checkbox]:checked:checked ~ .MenuBtn span {
+      background-color: rgba(255, 255, 255, 0);
+      
+  }
+  input[type=checkbox]:checked ~ .MenuBtn span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+  }
+  input[type=checkbox]:checked ~ .MenuBtn span::after {
+      top: 0;
+      transform: rotate(-45deg);
+  }
+  input[type=checkbox].MenuBtnCheckBox{
+   display: none;
+   margin:0 0;
+  }
+  
+.MenuBtnCheckList {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    z-index: 80;
+    background-color:rgba(0,0,0,0.8) ;
+    transition: all 0.5s;
+}
+input[type=checkbox]:checked ~ .MenuBtnCheckList {
+    left: 0;
+}
+.MenuBtnCheckList ul {
+    padding: 0 0;
+    margin: 0 0;
+}
+.MenuBtnCheckList ul li {
+    border-bottom: none;
+    list-style: none;
+    line-height: 25px;
+    
+}
+.MenuBtnCheckList ul li a {
+    display: inline-block;
+    width: 30%;
+    margin:0 35%;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.MenuBtnCheckList ul li a span:last-child{
+ color: #f79214;
+ margin: 10px 0;
+ font-size: 12px;
+}
+.MenuRightItem-buttun {
+ background-color: rgba(247,146,20,1);
+ border-radius: 40px;
+}
+
+/*-------------------------------------------------------------*/
+ 
+  .ResBackImage {
+   background-size: cover;
+   width: 100%;
+   height: auto;
+   padding-top: 65px;
+   display: block
+  }
+  
+  .MainContener{
+   margin: 0 0;
+   text-align: center;
+   margin-top:-45vw;
+   width: 100%;
+   margin-bottom: 5%;
+  }
+  .MainTitle{
+   width: 100%;
+   text-align: center
+  }
+  .MainContener h2 {
+  font-size: 25px;
+  height: auto;
+  margin-bottom: 5%;
+  color: rgb(51, 51, 51);
+  }
+  .MainTitlePop {
+   display: inline-block;
+   display: flex;
+   margin-bottom: 50px;
+   text-align: center; 
+   align-items: center;
+   width: 100%;
+   justify-content:space-between;
+  }
+  .MainTitlePop img{
+   display: block;
+   margin:0 20px;
+   float:none;
+   text-align: center; 
+   width: 100%;
+  }
+  .MainTitlePop img:nth-child(2){
+   width: 150%;
+  }
+  .MainTitleLink {
+   padding: 0;
+   border-radius: 100px;
+   font-size: 1.5rem;
+   margin:0 0;
+   width: 95%;
+   text-align: center;
+   color: white;
+  }
+  .MainTitleLink a:first-child{
+   width: 80%;
+   background-color: rgba(247,146,20,1); 
+   border-radius: 50px;
+   color:white;
+   padding:2%;
+  }
+  .MainTitleLink a:last-child{
+   display: none;
+  }
+  
+  .MainTitleLink{
+   margin:0 5%;
+  }
+  .MainTitleLink a{
+   display: block;
+   
+  }
+  .MainNote{
+   padding: 0 5%;
+  }
+  .MainNote p{
+   font-size: 12px;
+   opacity: 0.5;
+   line-height: 15px;
+   margin: 3px 0;
+  }
+   .MainMove {
+   display: inline-block;
+   text-align: center;
+   }
+  .MainMove {
+   display: block;
+   padding: 3% 0;
+   background-color: #f79214;
+   align-items: center;
+  }
+  
+  .MainMove-Left video{
+   width: 80%;
+   height: auto;
+   margin: 0 0;
+  }
+  
+  .MainMove-Right{
+   display: block;
+   float: none;
+   width: 80%;
+   color: white;
+   text-align: left;
+   margin: 0 auto;
+  }
+  .MainMove-Right h2 {
+   font-size: 38px;
+   margin-bottom: 10px;
+  }
+  .MainMove-Right p{
+   margin-bottom:  1%;
+   font-size: 16px;
+   
+  }
+  .MainMove-Right-Link {
+    margin-right: 10px;
+    display: flex;
+    font-size: 18px;
+    color: white;
+  }
+  .MainMove-Right-Link img{
+   margin-right: 5px
+  }
+  .MainMove-Right br{
+  display: none;
+  }
+  
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+   a {
+   text-decoration: none;
+  }
+  a:hover {
+   opacity: 0.6;
+   cursor: pointer;
+  }
+ 
+  .Header {
+   margin: 0 0;
+   padding: 0 0;
+   background: rgb( 255,255,255,0);
+   position: fixed !important;
+  }
+   .MenuContener{
+   width: 100%;
+   height: 50px;
+   margin:0 0;
+   position: fixed !important;
+   background-color: white;
+   justify-content: space-between;
+   top:0;
+   left: 0;
+  }
+  
+  .MenuRightNomal {
+   display: none;
+  }
+  
+  .MenuLogo {
+   display: block;
+  }
+  .MenuLogoImage{
+   width: 20%;
+   height: auto;
+   position: absolute;
+  	top: 5px;
+  	left: 20px;
+   margin: 5px 5px;
+  }
+  
+  /*---------------------------------------*/
+  .MenuRightHamburger {
+   margin: 100px 0;
+   width: 100%;
+   display: block;
+  }
+  .MenuBtn {
+      position: fixed;
+      top: 5px;
+      right: 30px;
+      display: flex;
+      height: 40px;
+      width: 40px;
+      justify-content: center;
+      align-items: center;
+      z-index: 90;
+  }
+  .MenuBtn span,
+  .MenuBtn span:before,
+  .MenuBtn span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 40px;
+      border-radius: 3px;
+      background-color: black;
+      position: absolute;
+  }
+  .MenuBtn span:before {
+      bottom: 10px;
+  }
+  .MenuBtn span:after {
+      top: 10px;
+  }
+
+  input[type=checkbox]:checked:checked ~ .MenuBtn span {
+      background-color: rgba(255, 255, 255, 0);
+      
+  }
+  input[type=checkbox]:checked ~ .MenuBtn span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+  }
+  input[type=checkbox]:checked ~ .MenuBtn span::after {
+      top: 0;
+      transform: rotate(-45deg);
+  }
+  input[type=checkbox].MenuBtnCheckBox{
+   display: none;
+  }
+  
+.MenuBtnCheckList {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50px;
+    left: 100%;
+    z-index: 80;
+    background-color:rgba(0,0,0,0.8) ;
+    transition: all 0.5s;
+}
+input[type=checkbox]:checked ~ .MenuBtnCheckList {
+    left: 0;
+}
+.MenuBtnCheckList ul {
+    padding: 0 0;
+    margin: 0 0;
+}
+.MenuBtnCheckList ul li {
+    border-bottom: none;
+    list-style: none;
+    line-height: 25px;
+    
+}
+.MenuBtnCheckList ul li a {
+    display: inline-block;
+    width: 30%;
+    margin:0 35%;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.MenuBtnCheckList ul li a span:last-child{
+ color: #f79214;
+ margin: 10px 0;
+ font-size: 12px;
+}
+.MenuRightItem-buttun {
+ background-color: rgba(247,146,20,1);
+ border-radius: 40px;
+}
+
+  /*-------------------------------------------------------------*/
+  body {
+   background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 640px;
+   background-repeat: no-repeat;
+  }
+  .ResBackImage {
+   display: none;
+  }
+  
+  .Main{
+   margin: 5% 5% 1% 5%;
+  }
+  
+  .MainContener{
+   margin: 0px 0PX;
+   width: 500px;
+   justify-content: center;
+   text-align: center;
+   padding-top: 50px;
+  }
+  .MainContener h2 {
+   width: 100%;
+   font-size: 35px;
+   margin:0 0 ;
+   color: rgb(51, 51, 51);
+  }
+  
+  .MainTitlePop {
+   display: flex;
+   margin-bottom: 20px;
+  }
+  .MainTitlePop img{
+   display: block;
+  }
+  .MainTitlePop img:first-child{
+   margin-right: 8px;
+  }
+  .MainTitlePop img:nth-child(2){
+   width: 200px;
+   height: 200px;
+   margin-right: 10px;
+  }
+  .MainTitlePop img:last-child{
+   margin-right: 0px;
+  }
+  
+  .MainTitleLink{
+    height: 60px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+  .MainTitleLink a{
+   display: flex;
+   display: inline-block;
+   justify-content: center;
+  }
+  
+  .MainTitleLink a:first-child{
+   color: white;
+   background-color: #f79214;
+   border-radius: 40px;
+   font-size: 16px;
+   margin-right: 15px;
+   width: 306px;
+   padding: 20px 0px;
+  }
+  .MainTitleLink a:last-child{
+   color: black;
+   border: 0.5px solid #c0c0c0;
+   border-radius: 40px;
+   font-size: 16px;
+   background-color: white;
+   padding: 20px;
+  }
+   
+  .MainNote p{
+   opacity: 0.5;
+   font-size: 0.75rem;
+   line-height: 12px;
+   margin:3px 0;
+  }
+   .MainMove {
+   display: inline-block;
+   text-align: center;
+   }
+  .MainMove {
+   display: block;
+   padding: 3% 0;
+   background-color: #f79214;
+   align-items: center;
+  }
+  
+  .MainMove-Left video{
+   width: 80%;
+   height: auto;
+   margin: 0 0;
+  }
+  
+  .MainMove-Right{
+   display: block;
+   float: none;
+   width: 80%;
+   color: white;
+   text-align: left;
+   margin: 0 auto;
+  }
+  .MainMove-Right h2 {
+   font-size: 38px;
+   margin-bottom: 10px;
+  }
+  .MainMove-Right p{
+   margin-bottom:  3%;
+   font-size: 16px;
+  }
+  .MainMove-Right-Link {
+    margin-right: 10px;
+    display: flex;
+    font-size: 18px;
+    color: white;
+  }
+  .MainMove-Right-Link img{
+   margin-right: 5px
+  }
+  .MainMove-Right br{
+  display: none;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1080px) {
+/* タブレット向けスタイル　*/
+ a {
+   text-decoration: none;
+  }
+  a:hover {
+   opacity: 0.6;
+   cursor: pointer;
+  }
+ 
+  .Header {
+   margin: 0 0;
+   padding: 0 0;
+   background: rgb( 255,255,255,0);
+   position: fixed !important;
+  }
+   .MenuContener{
+   width: 100%;
+   height: 50px;
+   margin:0 0;
+   position: fixed !important;
+   background-color: white;
+   justify-content: space-between;
+   top:0;
+   left: 0;
+  }
+  
+  .MenuRightNomal {
+   display: none;
+  }
+  .MenuLogo {
+   display: block;
+  }
+  .MenuLogoImage{
+   width: 20%;
+   height: auto;
+   position: absolute;
+  	top: 5px;
+  	left: 20px;
+   margin: 5px 5px;
+  }
+  
+ /*-------------------------------------------------------*/
+  .MenuRightHamburger {
+   margin: 100px 0;
+   width: 100%;
+   display: block;
+  }
+  .MenuBtn {
+      position: fixed;
+      top: 5px;
+      right: 30px;
+      display: flex;
+      height: 40px;
+      width: 40px;
+      justify-content: center;
+      align-items: center;
+      z-index: 90;
+  }
+  .MenuBtn span,
+  .MenuBtn span:before,
+  .MenuBtn span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 40px;
+      border-radius: 3px;
+      background-color: black;
+      position: absolute;
+  }
+  .MenuBtn span:before {
+      bottom: 10px;
+  }
+  .MenuBtn span:after {
+      top: 10px;
+  }
+
+  input[type=checkbox]:checked:checked ~ .MenuBtn span {
+      background-color: rgba(255, 255, 255, 0);
+      
+  }
+  input[type=checkbox]:checked ~ .MenuBtn span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+  }
+  input[type=checkbox]:checked ~ .MenuBtn span::after {
+      top: 0;
+      transform: rotate(-45deg);
+  }
+  input[type=checkbox].MenuBtnCheckBox{
+   display: none;
+  }
+  
+.MenuBtnCheckList {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50px;
+    left: 100%;
+    z-index: 80;
+    background-color:rgba(0,0,0,0.8) ;
+    transition: all 0.5s;
+}
+input[type=checkbox]:checked ~ .MenuBtnCheckList {
+    left: 0;
+}
+.MenuBtnCheckList ul {
+    padding: 0 0;
+    margin: 0 0;
+}
+.MenuBtnCheckList ul li {
+    border-bottom: none;
+    list-style: none;
+    line-height: 25px;
+    
+}
+.MenuBtnCheckList ul li a {
+    display: inline-block;
+    width: 30%;
+    margin:0 35%;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.MenuBtnCheckList ul li a span:last-child{
+ color: #f79214;
+ margin: 10px 0;
+ font-size: 12px;
+}
+.MenuRightItem-buttun {
+ background-color: rgba(247,146,20,1);
+ border-radius: 40px;
+}
+
+  /*-------------------------------------------------------------*/
+  body {
+   background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 640px;
+   background-repeat: no-repeat;
+  }
+  .ResBackImage {
+   display: none;
+  }
+  
+  .Main{
+   margin: 5% 5% 1% 5%;
+  }
+  
+  .MainContener{
+   margin: 0px 0PX;
+   width: 500px;
+   justify-content: center;
+   text-align: center;
+   padding-top: 50px;
+  }
+  .MainContener h2 {
+   width: 100%;
+   font-size: 35px;
+   margin:0 0 ;
+   color: rgb(51, 51, 51);
+  }
+  
+  .MainTitlePop {
+   display: flex;
+   margin-bottom: 20px;
+  }
+  .MainTitlePop img{
+   display: block;
+  }
+  .MainTitlePop img:first-child{
+   margin-right: 8px;
+  }
+  .MainTitlePop img:nth-child(2){
+   width: 200px;
+   height: 200px;
+   margin-right: 10px;
+  }
+  .MainTitlePop img:last-child{
+   margin-right: 0px;
+  }
+  
+  .MainTitleLink{
+    height: 60px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+  .MainTitleLink a{
+   display: flex;
+   display: inline-block;
+   justify-content: center;
+  }
+  
+  .MainTitleLink a:first-child{
+   color: white;
+   background-color: #f79214;
+   border-radius: 40px;
+   font-size: 16px;
+   margin-right: 15px;
+   width: 306px;
+   padding: 20px 0px;
+  }
+  .MainTitleLink a:last-child{
+   color: black;
+   border: 0.5px solid #c0c0c0;
+   border-radius: 40px;
+   font-size: 16px;
+   background-color: white;
+   padding: 20px;
+  }
+   
+  .MainNote p{
+   opacity: 0.5;
+   font-size: 0.75rem;
+   line-height: 12px;
+   margin:3px 0;
+  }
+   .MainMove{
+   display: flex;
+   padding: 3% 0%;
+   background-color: #f79214;
+   align-items: center;
+   width: 100%;
+  }
+  
+  .MainMove-Left video{
+   width: 500px;
+   margin: 0 25px;
+  }
+  
+  .MainMove-Right{
+   width: 600px;
+   color: white;
+   margin: 0 5% 0 4%;
+  }
+  .MainMove-Right br{
+  display: none;
+   
+  }
+  .MainMove-Right h2 {
+   font-size: 35px;
+   margin: 10px 0;
+  }
+  .MainMove-Right-Link {
+    margin-right: 10px;
+    display: flex;
+    font-size: 18px;
+    color: white;
+  }
+  .MainMove-Right-Link img{
+   margin-right: 5px
+}
+
+}
+@media screen and (min-width: 1081px) {
+/* 基本スタイル（PC向けスタイル） */
+  a {
+   text-decoration: none;
+  }
+  a:hover {
+   opacity: 0.6;
+   cursor: pointer;
+  }
+ 
+  .Header {
+   margin: 0 0;
+   padding: 0 0;
+   background: rgb( 255,255,255,0);
+  }
+  .MenuContener {
+   display: flex;
+   padding: 1%;
+   justify-content: space-between;
+   height: 50px;
+  }
+  
+  .MenuRightNomal ul {
+   display: flex;
+   list-style: none;
+   align-items: center;
+   padding:0 10px;
+   margin: 5px 0;
+  }
+  .MenuRightItemList li {
+   font-size:15px;
+   margin: 0px 20px;
+   text-align: center;
+   line-height: 12px;
+  }
+  
+  .MenuRightItem a{
+   display: block;
+   color: black;
+  }
+  .MenuLogo {
+   display: block;
+  }
+  
+  .MenuLogoImage{
+   display: block;
+   width: 200px;
+   height: auto;
+  }
+
+  .MenuRightItem-buttun { 
+   color: white!important;
+   padding: 15px;
+   background-color: rgba(247,146,20,1);
+   border-radius: 30px;
+   font-size: 0.7rem;
+  }
+  
+  .MenuRightItemListLink>span:first-child {
+   font-weight: bold;
+  }
+  .MenuRightItemListLink>span:last-child {
+   font-size: 10px;
+  }
+  .MenuRightHamburger{
+   display: none;
+  }
+  
+  
+  body {
+   background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 640px;
+   background-repeat: no-repeat;
+   margin: 0 0;
+  }
+  .ResBackImage {
+   display: none;
+  }
+  
+  .Main{
+   margin: 4% 10% 1% 10%;
+  }
+  
+  .MainContener{
+   margin: 0px 0px;
+   justify-content: center;
+   text-align: center;
+   width:100%;
+  }
+  .MainContener h2 {
+   width: 500px;
+   font-size: 35px;
+   margin:0 0 ;
+   color: rgb(51, 51, 51);
+  }
+  .MainTitlePop {
+   display: flex;
+   margin-bottom: 20px;
+  }
+  .MainTitlePop img{
+   display: block;
+  }
+  .MainTitlePop img:first-child{
+   margin-right: 8px;
+  }
+  .MainTitlePop img:nth-child(2){
+   width: 200px;
+   height: 200px;
+   margin-right: 10px;
+  }
+  .MainTitlePop img:last-child{
+   margin-right: 0px;
+  }
+  
+  .MainTitleLink{
+    height: 70px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+  .MainTitleLink a{
+   display: flex;
+   display: inline-block;
+   justify-content: center;
+  }
+  
+  .MainTitleLink a:first-child{
+   color: white;
+   background-color: #f79214;
+   border-radius: 40px;
+   font-size: 16px;
+   margin-right: 15px;
+   width: 306px;
+   padding: 20px 0px;
+  }
+  .MainTitleLink a:last-child{
+   color: black;
+   border: 0.5px solid #c0c0c0;
+   border-radius: 40px;
+   font-size: 16px;
+   background-color: white;
+   padding: 20px;
+  }
+   
+  .MainNote p{
+   opacity: 0.5;
+   font-size: 0.75rem;
+   line-height: 10px;
+  }
+  .MainMove{
+   display: flex;
+   padding: 3% 0;
+   background-color: #f79214;
+   align-items: center;
+   width: 100%;
+  }
+  .MainMove-Left{
+   margin:  5% 5%;
+  }
+  
+  .MainMove-Left video{
+   width: 500px;
+  }
+  
+  .MainMove-Right{
+   color: white;
+   margin: 0 5% 0 4%;
+  }
+  .MainMove-Right br{
+  display: none;
+   
+  }
+  .MainMove-Right h2 {
+   font-size: 35px;
+   margin: 10px 0;
+  }
+  .MainMove-Right-Link {
+    margin-right: 10px;
+    display: flex;
+    font-size: 1.1rem;
+    color: white;
+  }
+  .MainMove-Right-Link img{
+   margin-right: 5px
+  }
+}
+
+
